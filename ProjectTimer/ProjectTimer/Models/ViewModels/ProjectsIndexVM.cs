@@ -7,13 +7,14 @@ namespace ProjectTimer.Models.ViewModels
 {
     public class ProjectsIndexVM
     {
+        public static int projectId = 0;
         public ProjectsIndexVM()
         {
             ProjectList = new List<ProjectVM>
             {
-                new ProjectVM {Id=1, ProjectName="Projekt1", ProjectLength=new TimeSpan(0, 0, 10) },
-                new ProjectVM {Id=2, ProjectName="Projekt2", ProjectLength=new TimeSpan(0, 0, 20) },
-                new ProjectVM {Id=3, ProjectName="Projekt3", ProjectLength=new TimeSpan(0, 0, 10) }
+                new ProjectVM {Id=++projectId, ProjectName="Projekt1", ProjectLength=new TimeSpan(0, 0, 10) },
+                new ProjectVM {Id=++projectId, ProjectName="Projekt2", ProjectLength=new TimeSpan(0, 0, 20) },
+                new ProjectVM {Id=++projectId, ProjectName="Projekt3", ProjectLength=new TimeSpan(0, 0, 10) }
             };
         }
 

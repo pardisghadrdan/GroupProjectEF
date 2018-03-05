@@ -1,0 +1,20 @@
+﻿@model ProjectsCreateVM
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+</head>
+<body>
+    <form asp-controller="Projects" asp-action="Create">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+
+        <label asp-for="Category"></label>
+        <input asp-for="Category" />
+
+        <button type="submit">Create Project</button>
+
+
+    </form>
+</body>
+</html>
