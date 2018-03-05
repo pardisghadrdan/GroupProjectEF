@@ -1,0 +1,18 @@
+﻿@model ProjectTimer.Models.ViewModels.ProjectsIndexVM
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    @foreach (var item in Model.ProjectList)
+    {
+    <p>
+        @item.ProjectName
+    </p>
+    }
+</body>
+</html>
