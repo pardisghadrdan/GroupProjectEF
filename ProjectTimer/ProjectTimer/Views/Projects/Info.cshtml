@@ -13,17 +13,17 @@
     <p>
         <label asp-for="@Model.Category"></label>@Model.Category
     </p>
-    <p>
+    <p id="totalTime">
         <label asp-for="@Model.TotalTime"></label>@Model.TotalTime
     </p>
 
-        <nav class="controls">
-            <a href="#" class="button" onClick="stopwatch.start();">Start</a>
-            <a href="#" class="button" onClick="stopwatch.stop();">Stop</a>
-        </nav>
+    <nav class="controls">
+        <a href="#" class="button" onClick="stopwatch.start();">Start</a>
+        <a href="#" class="button" onClick="stopwatch.stop();">Stop</a>
+    </nav>
         <div class="stopwatch"></div>
-        <ul class="results"></ul>
-
+        <p class="results">
+        </p>
         <script src="/js/stopwatch.js"></script>
 </body>
 </html>

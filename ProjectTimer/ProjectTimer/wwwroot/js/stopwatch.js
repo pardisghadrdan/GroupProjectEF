@@ -102,7 +102,7 @@ function pad0(value, count) {
     var result = value.toString();
     for (; result.length < count; --count) {
         result = '0' + result;
-    }return result;
+    } return result;
 }
 
 function clearChildren(node) {
