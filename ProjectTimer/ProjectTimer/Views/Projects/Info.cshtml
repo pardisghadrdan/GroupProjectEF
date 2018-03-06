@@ -14,18 +14,13 @@
     <p>
         <label asp-for="@Model.TotalTime"></label>@Model.TotalTime
 
-        <br />
-
-
-
-
-
-
-
-
-
-
-
     </p>
+    <nav class="controls">
+        <a href="#" class="button" onClick="stopwatch.start();">Start</a>
+        <a href="#" class="button" onClick="stopwatch.stop();">Stop</a>
+    </nav>
+    <div class="stopwatch"></div>
+    <ul class="results"></ul>
+    <script src="/js/stopwatch.js"></script>
 </body>
 </html>
