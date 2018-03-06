@@ -40,5 +40,13 @@ namespace ProjectTimer.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+        [Route("Projects/Info/{id}")]
+        [HttpGet]
+        public IActionResult Info(int id)
+        {
+            return View(projects.GetProjectById(id));
+
+        }
     }
 }
