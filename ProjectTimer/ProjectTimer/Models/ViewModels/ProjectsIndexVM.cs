@@ -13,6 +13,9 @@ namespace ProjectTimer.Models.ViewModels
         {
             ProjectList = new List<ProjectVM>
             {
+
+
+
                 new ProjectVM {Id=++projectId, ProjectName="Projekt1", Category="work",ProjectLength=new TimeSpan(0, 0, 10) },
                 new ProjectVM {Id=++projectId, ProjectName="Projekt2", Category="play",ProjectLength=new TimeSpan(0, 0, 20) },
                 new ProjectVM {Id=++projectId, ProjectName="Projekt3", Category="training",ProjectLength=new TimeSpan(0, 0, 10) }
