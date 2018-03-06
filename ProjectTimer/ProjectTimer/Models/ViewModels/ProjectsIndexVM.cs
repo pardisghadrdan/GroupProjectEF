@@ -18,6 +18,7 @@ namespace ProjectTimer.Models.ViewModels
             };
         }
 
+
         public List<ProjectVM> ProjectList { get; set; }
 
         public class ProjectVM
