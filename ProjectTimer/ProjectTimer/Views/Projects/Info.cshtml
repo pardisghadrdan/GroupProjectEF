@@ -15,6 +15,7 @@
     </p>
     <p>
         <label asp-for="@Model.TotalTime"></label>@Model.TotalTime
+    </p>
 
         <nav class="controls">
             <a href="#" class="button" onClick="stopwatch.start();">Start</a>
@@ -22,6 +23,7 @@
         </nav>
         <div class="stopwatch"></div>
         <ul class="results"></ul>
-    </p>
+
+        <script src="/js/stopwatch.js"></script>
 </body>
 </html>
