@@ -1,0 +1,6 @@
+﻿#functionB {
+    opacity: 0.9;
+    color: #222;
+    /*background-color: black transparent;*/
+    background-color: rgba(200, 193, 193,0.5);
+}
