@@ -46,7 +46,14 @@ namespace ProjectTimer.Controllers
         public IActionResult Info(int id)
         {
             return View(projects.GetProjectById(id));
+        }
 
+        [Route("Projects/ReportElapsedTime/{id}")]
+        [HttpPost]
+        public IActionResult Info(int id, string elapsedTime)
+        {
+            projects.UpdateProjectWithElapsedTime(id, elapsedTime);
+            return Content("01:02:03");
         }
     }
 }
