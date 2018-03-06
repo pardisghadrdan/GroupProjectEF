@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+
     <title></title>
 </head>
 <body>
@@ -14,6 +16,8 @@
         <a asp-controller="Projects" asp-action="Info" asp-route-id="@item.Id">@item.ProjectName</a>
     </p> 
     }
-    <input type="button" id="newProjectButton" value="New Project" />
+    
+        <a asp-controller="Projects" asp-action="Create" value="New Project"><input type="button" value="New Project"/></a>
+   
 </body>
 </html>

@@ -17,7 +17,8 @@ namespace ProjectTimer.Models
             {
                 Id = ++ProjectsIndexVM.projectId,
                 ProjectName = create.Name,
-                ProjectLength = new TimeSpan(0, 0, 0)
+                ProjectLength = new TimeSpan(0, 0, 0),
+                Category = create.Category
             });
         }
         public ProjectsIndexVM GetProjects()
