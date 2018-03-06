@@ -26,7 +26,7 @@ namespace ProjectTimer
                 app.UseDeveloperExceptionPage();
             }
 
-
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
