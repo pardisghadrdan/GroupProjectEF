@@ -24,5 +24,11 @@ namespace ProjectTimer.Models
         {
             return temp;
         }
+
+        public ProjectsInfoVM GetProjectById(int id)
+        {
+            var project = temp.ProjectList.Single(p => p.Id == id);
+            return new ProjectsInfoVM { Id = project.Id, Category = project.Category, Name = project.ProjectName, TotalTime = project.ProjectLength };
+        }
     }
 }
