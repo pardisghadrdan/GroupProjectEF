@@ -8,6 +8,7 @@ namespace ProjectTimer.Models.ViewModels
     public class ProjectsIndexVM
     {
         public static int projectId = 0;
+
         public ProjectsIndexVM()
         {
             ProjectList = new List<ProjectVM>
