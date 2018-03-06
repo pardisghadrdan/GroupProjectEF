@@ -1,0 +1,10 @@
+﻿#functionB {
+    opacity: 0.9;
+    color: #222;
+    /*background-color: black transparent;*/
+    background-color: rgba(200, 193, 193,0.5);
+    width:170px;
+}
+.button{
+    width:170px;
+}

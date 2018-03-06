@@ -4,8 +4,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
-
     <title></title>
 </head>
 <body>
@@ -13,11 +11,13 @@
     @foreach (var item in Model.ProjectList)
     {
     <p>
-        <a asp-controller="Projects" asp-action="Info" asp-route-id="@item.Id"><input type="button" value="@item.ProjectName" /></a>
+        <a asp-controller="Projects" asp-action="Info" asp-route-id="@item.Id"><input type="button" class="button" value="@item.ProjectName" /></a>
     </p> 
     }
     
-        <a asp-controller="Projects" asp-action="Create" value="New Project"><input type="button" id="newPB" value="New Project"/></a>
+        <a asp-controller="Projects" asp-action="Create" value="New Project"><input type="button" id="functionB" value="New Project"/></a>
    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <link href="/Scripts/StyleSheet.css" rel="stylesheet" />
 </body>
 </html>
