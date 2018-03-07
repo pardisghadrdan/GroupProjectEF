@@ -12,7 +12,10 @@ $("#stopButton").click(function () {
         data: { "elapsedTime": elapsedTime },
         success: function (result) {
             $("#totalTimeSpan").text(result);
-            elapsedTime = "00:00:00";
+            
         }
     });
+    stopwatch.reset();
+    var timer = document.getElementById("myStopwatch");
+    timer.innerHTML = "00:00:00";
 })
