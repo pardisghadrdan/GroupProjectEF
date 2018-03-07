@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using ProjectTimer.Models;
+using ProjectTimer.Models.Entities;
 
 namespace ProjectTimer
 {
@@ -15,6 +18,10 @@ namespace ProjectTimer
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            var connString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ProjectTimerDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            services.AddDbContext<ProjectTimerContext>(o => o.UseSqlServer(connString));
+            services.AddTransient<ProjectsRepository>();
+
             services.AddMvc();
         }
 
