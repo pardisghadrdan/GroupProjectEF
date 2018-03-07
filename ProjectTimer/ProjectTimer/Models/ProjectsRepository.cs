@@ -32,6 +32,19 @@ namespace ProjectTimer.Models
             return new ProjectsInfoVM { Id = project.Id, Category = project.Category, Name = project.ProjectName, TotalTime = project.ProjectLength };
         }
 
+        public int[] ConvertTimeStringToIntArray(string time)
+        {
+            int[] array = new int[3];
+            string[] stringArray = time.Split(":");
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = Convert.ToInt32(stringArray[i]);
+            }
+            
+            return array;
+        }
+
         internal void UpdateProjectWithElapsedTime(int id, string elapsedTime)
         {
         }

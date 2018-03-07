@@ -52,7 +52,8 @@ namespace ProjectTimer.Controllers
         [HttpPost]
         public IActionResult Info(int id, string elapsedTime)
         {
-            projects.UpdateProjectWithElapsedTime(id, elapsedTime);
+            //projects.UpdateProjectWithElapsedTime(id, elapsedTime);
+            projects.ConvertTimeStringToIntArray(elapsedTime);
             return Content("01:02:03");
         }
     }
